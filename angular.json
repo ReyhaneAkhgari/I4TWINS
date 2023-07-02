@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "2be8d726-6cf3-45eb-a677-91248ef46c50"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,6 +23,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
+            "preserveSymlinks": true,
             "outputPath": "dist/i4twins",
             "index": "src/index.html",
             "main": "src/main.ts",
